@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!-- This is the Family Page HTML for 158258 Assignment 1 for Student 00094382 -->
+<html lang="en">
+
+ <head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="styles.css"/>
+  <script src="JsRemys.js"></script>
+  <title>Family page</title>
+ </head>
+
+ <body>
+  <div class="navbar">
+    <a href="home.html">Remy's Family Page</a>
+    <div class="dropdown">
+     <button class="dropbtn">The Other Pages
+       <i class="fa fa-caret-down"></i>
+     </button>
+      <div class="dropdown-content">
+       <a class="active" href="family.html">The Family</a>
+       <a class="active" href="food.html">The Food</a>
+       <a class="active" href="build.html">The Build</a>
+       <a class="active" href="recipe.html">The Recipe</a>
+      </div>
+    </div>
+  </div>
+
+  <h1>Remy's - The Family</h1>
+
+  <section>
+   <div class="flex-columns">
+    <div class="flex-rows">
+
+     <div class="flex-rows-sub">
+      <div> 
+       <h2>Colette and Amélie</h2>
+       <p>Colette is Front of House.</p>
+        <div class="img-comp-container">
+         <div class="img-comp-img">
+          <img src="img/Colette_with_Amelie1.jpg" alt="Amelie and Colette" width ="340" height="250">
+	 </div>
+        <div class="img-comp-img img-comp-overlay">
+          <img src="img/Colette_with_Amelie2.jpg" alt="Colette and Amelie" width ="340" height="250">
+        </div>
+       </div>
+       <p>She is Remy's wife.<br> Their daughter Amélie loves to help her mother.<br>
+       <br>(slide the pink circle to see both photos)</p>
+       <script> initComparisons(); </script>
+      </div>
+     </div>
+
+     <div class="flex-rows-sub">
+      <div> 
+       <h2>Remy and Fleur</h2>
+       <p>Remy is Chef.</p>
+       <img src="img/Remy_and_Fleur_at_Remys.jpg" alt="Remy and Fleur at Remys" width="260" height="320">
+       <p>The restaurant is his vision, supported by his family.<br>
+          His daughter Fleur loves to cook with him.</p>
+      </div>
+     </div>
+
+     <div class="flex-rows-sub">
+      <div> 
+       <h2>Cecile</h2>
+       <p>Cecile is Sommelier.<br></p>
+       <!-- container to facilitate JavaScript for Image Magnifier Glass -->
+       <div class="img-magnifier-container">
+        <img id="myimage" src="img/Cecile.jpg" alt="Cecile" width="230" height="300">
+       </div>
+       <p>She is Colette's younger sister, training to become a Master Sommelier.<br>
+          Her preference is an oaked Chardonnay.
+       <br>(use the pink magnifying glass to see more detail)</p>
+       <script>magnify("myimage", 3);</script>
+      </div>
+     </div>
+
+    </div>
+   </div>
+  </section>
+ </body>
+</html>

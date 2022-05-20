@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!-- This is the Food Page HTML for 158258 Assignment 1 for Student 00094382 -->
+<html lang="en">
+
+ <head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="styles.css"/>
+  <script src="JsRemys.js"></script>
+  <title>The Food</title>
+ </head>
+
+ <body>
+  <div class="navbar">
+    <a href="home.html">Remy's Food Page</a>
+    <div class="dropdown">
+     <button class="dropbtn">The Other Pages
+       <i class="fa fa-caret-down"></i>
+     </button>
+      <div class="dropdown-content">
+       <a class="active" href="family.html">The Family</a>
+       <a class="active" href="food.html">The Food</a>
+       <a class="active" href="build.html">The Build</a>
+       <a class="active" href="recipe.html">The Recipe</a>
+      </div>
+    </div>
+  </div>
+
+  <h1>Remy's - The Food</h1>
+
+  <section>
+   <div class="flex-columns">
+    <div class="flex-rows">
+
+     <div class="flex-rows-sub">
+      <div> 
+       <h2>Patisserie</h2>
+       <p>Fleur loves to help Remy in the kitchen.</p>
+       <div class="img-comp-container">
+        <div class="img-comp-img">
+         <img src="img/Fleur_in_the_kitchen.jpg" alt="Fleur in the kitchen" width ="340" height="250">
+        </div>
+        <div class="img-comp-img img-comp-overlay">
+         <img src="img/Fleur_making_patisserie.jpg" alt="Fleur making patisserie" width ="340" height="250">
+        </div>
+       </div>
+       <p>Her passion is patisserie; French desserts of a very high quality made to an exacting standard.<br>
+       <br>(slide the pink circle to see both photos)</p>
+       <script> initComparisons(); </script>
+      </div>
+     </div>
+
+     <div class="flex-rows-sub">
+      <div> 
+       <h2>Classic Country Cuisine</h2>
+       <p>Remy uses only ingredients bought fresh each day at the local market.</p>
+       <img src="img/Remy_making_ratatouille.jpg" alt="Remy making ratatouille" width="260" height="320">
+       <p><a href="recipe.html">Ratatouille</a> is his signature dish.</p>
+      </div>
+     </div>
+
+     <div class="flex-rows-sub">
+      <div> 
+       <h2>French Food</h2>
+       <p>Remy is classically trained, but he likes best to cook in the French Country Style. 
+          He loves to cook with his daughter Fleur.</p>
+       <!-- container to facilitate JavaScript for Image Magnifier Glass -->
+       <div class="img-magnifier-container">
+       <img id="myimage" src="img/Remy_and_Fleur_in_the_kitchen.jpg" alt="Remy and Fleur in the kitchen" width="400" height="300">
+       </div>
+       <p>Fleur's dream is to be trained by an expert pâtissière.
+       <br>(usee the pink magnifying glass to see more detail)</p>
+       <script>magnify("myimage", 3);</script>
+      </div>
+     </div>
+
+    </div>
+   </div>
+  </section>
+ </body>
+</html>

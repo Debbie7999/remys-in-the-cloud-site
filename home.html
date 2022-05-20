@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!-- This is the Home Page HTML for 158258 Assignment 1 for Student 00094382 -->
+<html lang="en">
+
+ <head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="styles.css"/>
+  <script src="JsRemys.js"></script>
+  <title>Remy's Home Page</title>
+ </head>
+
+ <body>
+  <div class="navbar">
+    <a href="home.html">Remy's Home Page</a>
+    <div class="dropdown">
+     <button class="dropbtn">The Other Pages
+       <i class="fa fa-caret-down"></i>
+     </button>
+      <div class="dropdown-content">
+       <a class="active" href="family.html">The Family</a>
+       <a class="active" href="food.html">The Food</a>
+       <a class="active" href="build.html">The Build</a>
+       <a class="active" href="recipe.html">The Recipe</a>
+      </div>
+    </div>
+  </div>
+
+  <h1>Welcome to Remy's</h1>
+
+  <!-- section 1 Blurb about Remy's  -->
+  <section>
+   <div class="flex-columns">
+    <div class="flex-rows">
+     <div class="flex-rows-sub">
+      <div> 
+       <h2>About Remy's</h2>
+       <p>This little French Restaurant was created to provide simple but delicious
+          country cooking, and a friendly relaxing ambience. 
+          Remy's is a family-run restaurant, very popular in the local neighbourhood.
+          To find out more about Remy's click on the pictures below, or select from the Menu above.
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+ 
+  <!-- section 2 Images with links for the 3 subpages -->
+  <section>
+   <div class="flex-columns">
+    <div class="flex-rows">
+
+     <div class="flex-rows-sub">
+      <div> 
+       <h2>The Family</h2>
+       <a href="family.html">
+       <!-- container to facilitate JavaScript for Image Comparison Slider -->
+       <div class="img-comp-container">
+        <div class="img-comp-img">
+         <img src="img/family_publicity_shot1.JPG" alt="family publicity shot 1" width ="330" height="250">
+        </div>
+        <div class="img-comp-img img-comp-overlay">
+         <img src="img/family_publicity_shot2.JPG" alt="family publicity shot 2" width ="330" height="250">
+        </div>
+       </div></a>
+       <p>Meet Remy's family, who help him run the restaurant.
+       <br>(slide the pink circle to see both photos)</p>
+       <script> initComparisons(); </script>
+      </div>
+     </div>
+
+     <div class="flex-rows-sub">
+      <div> 
+       <h2>The Food</h2>
+        <a href="food.html">
+        <img src="img/plat_du_jour.JPG" alt="plat du jour" width="280" height="170"> </a>
+        <p>See the kitchen</p>.
+      </div>
+     </div>
+
+     <div class="flex-rows-sub">
+      <div>
+       <h2>The Build</h2>
+       <a href="build.html">
+       <!-- container to facilitate JavaScript for Image Magnifier Glass -->
+       <div class="img-magnifier-container">
+        <img id="myimage" src="img/Remy_and_Fam_at_Remys.JPG" alt="the flat" width="380" height="260">
+       </div></a>
+       <p>(use the pink magnifying glass to see more detail)</p>
+       <script>magnify("myimage", 3);</script>
+      </div>
+     </div>
+
+    </div>
+   </div>
+  </section>
+ </body>
+</html>

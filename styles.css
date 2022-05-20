@@ -1,0 +1,242 @@
+/* Division settings for columns and rows within the sections*/
+.flex-columns {
+	display: flex;
+	flex-direction: column;
+        align-items: center;
+        text-align: center; 
+        background-image: url('img/pink_and_red.JPG');
+        background-size: 200px;
+	margin: 5px;
+	padding: 5px;
+}
+.flex-columns > div {
+	margin: 5px;
+	padding: 5px;
+	}
+
+.flex-rows {
+	display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 5px;
+	padding: 5px;
+}
+.flex-rows > div {
+        background-image: url('img/marble.JPG');
+        background-size: 200px;
+ 	margin: 5px;
+	padding: 5px;
+        min-width: 350px;
+	}
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+  background-image: url('img/marble.jpg');
+
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a purple background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #8A008A;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  background-color: #FF008A;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a red background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: red;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* Heading settings */
+h1 {
+      color: #FF008A;
+      font-size: 20px;
+      text-align: center; 
+      font-style: italic;
+      border: 1px solid #8A008A;
+      border-radius: 10px;
+      margin: 0;
+      padding: 0px 0;
+      
+}
+h2 {
+      color: #FF008A;
+      font-size: 18px;
+      text-align: center; 
+      font-style: italic;
+      margin: 0;
+      padding: 0px 0;
+
+}
+h3 {
+      color: #8A008A;
+      font-size:16px;
+      text-align: center; 
+      font-style: italic;
+}
+
+p {
+      color:#8A008A;
+      font-size:16px;
+      font-style:italic;
+}
+
+/* mouseover settings for recipe ingredient images*/
+.hiddentxt {
+        text-decoration: none;
+        z-index: 99;
+}
+.hiddenimg {
+        display: none;
+}
+
+.hiddentxt:hover ~ .hiddenimg {
+        display: block;
+        position: fixed;
+        z-index: 2
+}
+
+.hiddentxt2 {
+        text-decoration: none;
+        z-index: 99;
+}
+.hiddenimg2 {
+        display: none;
+}
+
+.hiddentxt2:hover ~ .hiddenimg2 {
+        display: block;
+        position: fixed;
+        z-index: 2
+}
+.hiddentxt3 {
+        text-decoration: none;
+        z-index: 99;
+}
+.hiddenimg3 {
+        display: none;
+}
+
+.hiddentxt3:hover ~ .hiddenimg3 {
+        display: block;
+        position: fixed;
+        z-index: 2
+}
+.hiddentxt4 {
+        text-decoration: none;
+        z-index: 99;
+}
+.hiddenimg4 {
+        display: none;
+}
+
+.hiddentxt4:hover ~ .hiddenimg4 {
+        display: block;
+        position: fixed;
+        z-index: 2
+}
+
+/* CSS code to support Image Comparison Slider JavaScript */
+
+* {box-sizing: border-box;}
+
+.img-comp-container {
+  position: relative;
+  height: 250px; 
+}
+
+.img-comp-img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.img-comp-img img {
+  display: block;
+  vertical-align: middle;
+}
+
+.img-comp-slider {
+  position: absolute;
+  z-index: 9;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  width: 40px;
+  height: 40px;
+  background-color: #FF008A;
+  opacity: 0.7;
+  border-radius: 50%;
+}
+
+/* CSS code to support Image Magnifier Glass JavaScript */
+* {box-sizing: border-box;}
+
+.img-magnifier-container {
+  position: relative;
+}
+
+.img-magnifier-glass {
+  position: absolute;
+  border: 3px solid #FF008A;
+  border-radius: 50%;
+  cursor: none;
+  /*Set the size of the magnifier glass:*/
+  width: 150px;
+  height: 150px;
+}

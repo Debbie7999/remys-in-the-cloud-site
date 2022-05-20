@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- This is the Build Page HTML for 158258 Assignment 1 for Student 00094382 -->
+<html lang="en">
+
+ <head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="styles.css"/>
+  <script src="JsRemys.js"></script>
+  <title>Remy's Signature Dish</title>
+ </head>
+
+ <body>
+  <div class="navbar">
+    <a href="home.html">Remy's Build Page</a>
+    <div class="dropdown">
+     <button class="dropbtn">The Other Pages
+       <i class="fa fa-caret-down"></i>
+     </button>
+      <div class="dropdown-content">
+       <a class="active" href="family.html">The Family</a>
+       <a class="active" href="food.html">The Food</a>
+       <a class="active" href="build.html">The Build</a>
+       <a class="active" href="recipe.html">The Recipe</a>
+      </div>
+    </div>
+  </div>
+
+  <h1>Remy's - The Build</h1>
+
+  <!-- section 1 the photos of the build -->
+  <section>
+   <div class="flex-columns">
+    <div class="flex-rows">
+
+     <div class="flex-rows-sub">
+      <div> 
+       <h2>The Starting Point</h2>
+       <p>This cardboard wine box from a local supermarket was the beginnings of the restaurant.</p>
+       <div class="img-comp-container">
+        <div class="img-comp-img">
+         <img src="img/building_the_restaurant1.jpg" alt="building the restaurant step 1"  width="300" height="220">
+        </div>
+        <div class="img-comp-img img-comp-overlay">
+         <img src="img/building_the_restaurant2.jpg" alt="building the restaurant step 2"  width="300" height="220">
+        </div>
+       </div>
+       <p>Simple basic materials can create stunning results when assisted by a craft knife and a 
+          hot glue gun.
+       <br>(slide the pink circle to see both photos)</p>
+       <script> initComparisons(); </script>
+      </div>
+     </div>
+
+     <div class="flex-rows-sub">
+      <div> 
+       <h2>The Next Step</h2>
+       <p>An early version of the kitchen.<br></p>
+       <img src="img/the_first_kitchen.jpg" alt="the first kitchen" width="210" height="325">
+       <p>Bench space and underbench refrigeration was very limited. An expansion was needed.</p>
+      </div>
+     </div>
+
+     <div class="flex-rows-sub">
+      <div> 
+       <h2>The Finished Build</h2>
+       <p>The completed restaurant has kitchen space for both Remy and Fleur, with a bathroom behind the kitchen, and three bedrooms below.</p>
+       <!-- container to facilitate JavaScript for Image Magnifier Glass -->
+       <div class="img-magnifier-container">
+       <img id="myimage" src="img/Amelie_sleeping.jpg" alt="Amelie sleeping" width="450" height="320">
+       </div>
+       <p>During the evenings Amélie sleeps safely below with her family working above. 
+          Late at night, when their guests have gone, they can eat and relax.<br>
+          Fleur's relaxation comes with creating new treats for her sister to taste.
+          <br>(use the pink magnifying glass to see more detail)</p>
+       <script>magnify("myimage", 3);</script>
+      </div>
+     </div>
+
+    </div>
+   </div>
+  </section>
+ </body>
+</html>
