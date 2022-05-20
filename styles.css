@@ -4,7 +4,7 @@
 	flex-direction: column;
         align-items: center;
         text-align: center; 
-        background-image: url('img/pink_and_red.JPG');
+        background-image: url('img/pink_and_red.jpg');
         background-size: 200px;
 	margin: 5px;
 	padding: 5px;
@@ -22,7 +22,7 @@
 	padding: 5px;
 }
 .flex-rows > div {
-        background-image: url('img/marble.JPG');
+        background-image: url('img/marble.jpg');
         background-size: 200px;
  	margin: 5px;
 	padding: 5px;
