@@ -5,6 +5,6 @@ window._config = {
         region: 'us-east-1' // as per Remys User Pool
     },
     api: {
-        invokeUrl: 'https://main.dhaujixvzmv8c.amplifyapp.com/' // the link from Amplify
+        invokeUrl: 'https://main.dhaujixvzmv8c.amplifyapp.com/' // fix the link from Amplify
     }
 };
